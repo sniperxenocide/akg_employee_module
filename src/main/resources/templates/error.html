@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+</head>
+<script>
+    var loginPageAPI = "/login";
+    function init() {
+        setTimeout(loadLoginPage,3000);
+    }
+
+    function loadLoginPage() {
+        window.location.pathname=loginPageAPI;
+    }
+</script>
+<body onload="init()">
+    <div class="container">
+        <center><label style="color: red;font-weight: bold">UNAUTHORIZED ACCESS</label></center>
+        <center><label style="color: red;font-weight: bold">WRONG CREDENTIAL</label></center>
+    </div>
+</body>
+</html>

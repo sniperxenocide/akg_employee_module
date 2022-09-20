@@ -1,0 +1,152 @@
+<html lang="">
+    <head>
+        <title></title>
+    </head>
+    <body >
+        <div class="container" >
+            <div class="row">
+                <form id="emp-filter-form" onsubmit="return applyFilterButtonAction(this)">
+                    <div class="col-75">
+                        <div class="row">
+                            <div class="col-20">
+                                <label><b>Company</b></label>
+                                <select id="filter_select_company" name="companyId">
+                                    <option value="%">-ALL</option>
+                                </select>
+                            </div>
+                            <div class="col-2-5"><label></label></div>
+                            <div class="col-20">
+                                <label><b>Department</b></label>
+                                <select id="filter_select_department" name="departmentId">
+                                    <option value="%">ALL</option>
+                                </select>
+                            </div>
+                            <div class="col-2-5"><label></label></div>
+                            <div class="col-20">
+                                <label><b>Designation</b></label>
+                                <select id="filter_select_designation" name="designationId" >
+                                    <option value="%">ALL</option>
+                                </select>
+                            </div>
+                            <div class="col-2-5"><label></label></div>
+                            <div class="col-20">
+                                <label><b>Work Location</b></label>
+                                <select id="filter_select_work_location" name="workLocationId" >
+                                    <option value="%">ALL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-20">
+                                <label><b>Verified</b></label>
+                                <select name="isVerified">
+                                    <option value="%">-ALL-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </div>
+                            <div class="col-2-5"><label></label></div>
+                            <div class="col-20">
+                                <label><b>Active</b></label>
+                                <select name="isActive">
+                                    <option value="%">-ALL-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </div>
+                            <div class="col-10"><label></label></div>
+                            <div class="col-25">
+                                <label></label>
+                                <button id="apply_filter_btn" type="submit" >
+                                    APPLY FILTER
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-25">
+                    <div class="row">
+                        <div class="col-45">
+                            <label for="search_keyword"><b>Keyword</b></label>
+                            <input type="text" id="search_keyword">
+                        </div>
+                        <div class="col-10"><label></label></div>
+                        <div class="col-45">
+                            <label for="search_type"><b>Search Type</b></label>
+                            <select id="search_type">
+                                <option value="1">ORACLE ID</option>
+                                <option value="2">NID</option>
+                                <option value="3">NAME</option>
+                                <option value="4">Employee Number</option>
+                                <option value="5">Birth Certificate</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label></label></div>
+                        <div class="col-50">
+                            <label></label>
+                            <button id="keyword_search_btn" onclick="searchDataWithKeyword()">
+                                Search</button>
+                        </div>
+                        <div class="col-25"><label></label></div>
+                    </div>
+                </div>
+            </div>
+            <div id="pagination-container" style="display: none"><label id="table_info_label"></label>
+            <div class="row" id="table-info-div">
+                <div class="col-8"><label>First Page:</label></div>
+                <div class="col-2-5"><button onclick="paginationClickAction('c')">1</button></div>
+                <div class="col-2-5"><label></label></div>
+                <div class="col-6"><button onclick="paginationClickAction('p')">Prev</button></div>&nbsp;
+                <div class="col-2-5"><label></label></div>
+                <div class="col-15"><label>Current Page: </label><label id="crnt-pg-no"></label></div>
+                <div class="col-2-5"><label></label></div>
+                <div class="col-6"><button onclick="paginationClickAction('n')">Next</button></div>&nbsp;  &nbsp;
+                <div class="col-2-5"><label></label></div>
+                <div class="col-8"><label>Last Page</label></div>&nbsp;
+                <div class="col-8"><button id="last-page-btn" onclick="paginationClickAction('l')">-</button></div>
+                <div class="col-2-5"><label></label></div>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="container" id="form_modal_content"></div>
+                    </div>
+                </div>
+                <div style="max-height:500px;overflow-y: auto">
+                    <table id="employee_table" class="styled-table">
+                        <thead>
+                        <tr>
+                            <th>SL</th><th>Verified</th><th>Active</th>
+                            <th>Name</th><th>Oracle Id</th><th>NID</th>
+                            <th>Employee Number</th><th>Birth Certificate</th>
+                            <th>Company</th><th>Department</th><th>Designation</th>
+                            <th>Work Location</th><th>Date of Birth</th><th>Joining Date</th>
+                            <th>Marriage Date</th><th>Official Phone</th><th>Personal Phone</th>
+                            <th>Emergency Contact</th><th>Postal Address</th><th>Email</th>
+                            <th>WhatsApp</th><th>IMO</th><th>Viber</th><th>Facebook</th>
+                            <th>Create Time</th><th>Created By</th>
+                        </tr>
+                        </thead>
+                        <tbody id="employee_table_body">
+                            <tr><td colspan="22">APPLY FILTER & Search</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-75"></div>
+                <div class="col-25">
+                    <button onclick="exportToExcel('employee_table')">
+                    Export Table</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

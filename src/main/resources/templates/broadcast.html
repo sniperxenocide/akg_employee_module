@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title></title></head>
+<body >
+    <div class="container">
+        <div style="text-align: center;"><h2>Broadcast Module</h2></div>
+        <div class="row">
+            <div class="col-40">
+                <div class="row">
+                    <div class="col-45">
+                        <label><b>Company</b></label>
+                        <button id="btn_company" class="select-button" onclick="onClickSelectModal('Select Company',0)">SELECT OPTION</button>
+                    </div>
+                    <div class="col-10"><label></label></div>
+                    <div class="col-45">
+                        <label><b>Department</b></label>
+                        <button id="btn_department" class="select-button" onclick="onClickSelectModal('Select Department',1)">SELECT OPTION</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-45">
+                        <label><b>Designation</b></label>
+                        <button id="btn_designation" class="select-button" onclick="onClickSelectModal('Select Designation',2)">SELECT OPTION</button>
+                    </div>
+                    <div class="col-10"><label></label></div>
+                    <div class="col-45">
+                        <label><b>Work Location</b></label>
+                        <button id="btn_work_location" class="select-button" onclick="onClickSelectModal('Select Work Location',3)">SELECT OPTION</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-30"><label></label></div>
+                    <div class="col-40">
+                        <label></label>
+                        <button onclick="applyFilter()">APPLY</button>
+                    </div>
+                    <div class="col-30"><label></label></div>
+                </div>
+                <div class="row">
+                    <div class="col-45">
+                        <label><b>Broadcast Media</b></label>
+                        <button id="btn_broadcast_media" class="select-button" onclick="onClickSelectModal('Select Broadcast Media',4)" >SELECT OPTION</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label><b>Message Body</b></label><span id="msg_length"></span>
+                        <textarea id="message_body" oninput="countAndShowMsgLength(this.value)"
+                                  rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <span id="broadcast_request_confirmation_span" style="color: green"></span>
+                </div>
+                <div class="row">
+                    <div class="col-75"></div>
+                    <div class="col-25">
+                        <button onclick="onClickSend()">SEND</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5"></div>
+            <div class="col-55">
+                <div style="text-align: center;"><label id="broadcast_table_header">
+                    <b>Total Filtered Employees : 0 </b></label></div>
+                <div style="max-height:500px;overflow-y: auto">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th></th><th>SL</th><th>Name</th><th>Company</th>
+                                <th>Department</th><th>Designation</th><th>Work Location
+                            </tr>
+                        </thead>
+                        <tbody id="employee_table_body">
+                            <tr><td colspan="7">APPLY FILTER</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" >
+            <div class="modal-content" style="width: 60%;opacity: 0.9">
+                <span class="close">&times;</span>
+                <div class="container" id="select_option_modal_content">
+                    <div style="text-align: center;"><h3 id="select_option_header">
+                    </h3></div>
+                    <div id="select_option_checkboxes">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Marble Production</td><td>Assistant General Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Accounts</td><td>Senior Manager</td><td>Gulshan Office, Dhaka</td></tr>-->
+<!--                            <tr><td><input type="checkbox"></td><td>Abdul Hakim</td><td>Ceramic</td>-->
+<!--                                <td>Marble Production</td><td>Assistant General Manager</td><td>Gulshan Office, Dhaka</td></tr>-->

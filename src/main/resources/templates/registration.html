@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="container">
+    <div style="text-align: center;"><h2 id="emp_form_header">Employee Registration Form</h2></div>
+    <div id="edit_delete_btn_div" style="display: none">
+        <div class="row" >
+            <div class="col-20">
+                <button id="edit_form_btn" onclick="onClickEditBtn()" >
+                <b>Edit Employee</b></button>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-20">
+                <button id="emp_delete_btn"
+                        onclick="onClickDeleteBtn()" style="background-color: red">
+                    <b>Delete Employee</b></button>
+            </div>
+            <div class="col-2-5"><label></label></div>
+            <div class="col-20">
+                <span id="delete_emp_msg_span" style="color: red"></span>
+            </div>
+        </div>
+        <label></label>
+    </div>
+
+    <fieldset id="form_field_set" style="border: none">
+    <form id="employee_registration_form" onsubmit="return performSubmitAction(this)">
+        <div class="row">
+            <div class="col-30" >
+                <div class="row">
+                    <div class="col-40">
+                        <label><b>Oracle Id</b><span style="color:red">*</span></label>
+                        <input type="text" id="oracleId" required
+                               onchange="alternateRequiredControl(this,'employeeNumber')"
+                               onkeypress="allowOnlyIntegerInput(event)" name="oracleId">
+                    </div>
+                    <div class="col-10"><label></label></div>
+                    <div class="col-50">
+                        <label>&nbsp;</label>
+                        <button type="button" id="load_from_oracle_btn" onclick="importEmployeeFromOracle(this)">Load From Oracle</button>
+                    </div>
+                </div>
+                <span id="oracle_id_import_msg" style="color: red"></span>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30" id="employee_number_div" >
+                <label><b>Employee Number</b><span style="color:red">*</span></label>
+                <input type="text" id="employeeNumber" name="employeeNumber"
+                       onchange="alternateRequiredControl(this,'oracleId')" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Name</b><span style="color:red">*</span> </label>
+                <input type="text" name="name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-30">
+                <label><b>NID</b><span style="color:red">*</span> </label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)" id="nid" name="nid"
+                       onchange="alternateRequiredControl(this,'birthCertificate')" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Birth Certificate</b><span style="color:red">*</span> </label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)"
+                       onchange="alternateRequiredControl(this,'nid')"
+                       id="birthCertificate" name="birthCertificate" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Date of Birth</b><span style="color:red">*</span> </label>
+                <input type="date" name="dateOfBirth" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label><b>Official Phone</b><span style="color:red">*</span></label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)"
+                       id="officialPhone" name="officialPhone"
+                       onchange="alternateRequiredControl(this,'personalPhone')" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Personal Phone</b><span style="color:red">*</span> </label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)"
+                       id="personalPhone" name="personalPhone"
+                       onchange="alternateRequiredControl(this,'officialPhone')" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Marriage Date</b></label>
+                <input type="date" name="marriageDate">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label><b>Emergency Contact</b></label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)"
+                       name="emergencyContact">
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Email</b></label>
+                <input type="text" name="email">
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Postal Address</b><span style="color:red">*</span></label>
+                <input type="text" name="postalAddress" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label><b>Company</b><span style="color:red">*</span> </label>
+                <select id="select_company" name="companyId" required>
+                    <option value="">-Select Option-</option>
+                </select>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Department</b><span style="color:red">*</span> </label>
+                <select id="select_department" name="departmentId" required>
+                    <option value="">-Select Option-</option>
+                </select>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Designation</b><span style="color:red">*</span> </label>
+                <select id="select_designation" name="designationId" required>
+                    <option value="">-Select Option-</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label> <b>Work Location</b><span style="color:red">*</span> </label>
+                <select id="select_work_location" name="workLocationId" required>
+                    <option value="">-Select Option-</option>
+                </select>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Joining Date</b><span style="color:red">*</span> </label>
+                <input type="date" name="joiningDate" required>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Has Smartphone</b><span style="color:red">*</span> </label>
+                <select name="hasSmartphone" required>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label><b>Whatsapp Number</b></label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)" name="whatsappNumber">
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Imo Number</b></label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)" name="imoNumber">
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Viber Number</b></label>
+                <input type="text" onkeypress="allowOnlyIntegerInput(event)" name="viberNumber">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-30">
+                <label><b>FB Profile Link</b></label>
+                <input type="text" name="fbProfileLink">
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Employee Verified?</b></label>
+                <select name="isVerified">
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+            </div>
+            <div class="col-5"><label></label></div>
+            <div class="col-30">
+                <label><b>Employee Active?</b></label>
+                <select name="isActive">
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-25"><label></label></div></div>
+        <div class ="row" >
+            <div class="col-25">  </div>
+            <div class="col-50">
+                <button id="registration_btn" type="submit"><b>Register</b> </button>
+                <button id="emp_update_btn"
+                        style="display: none" type="submit"><b>Update Profile</b> </button>
+            </div>
+            <div class="col-25">  </div>
+        </div>
+        <label></label>
+
+    </form>
+    </fieldset>
+</body>
+</html>

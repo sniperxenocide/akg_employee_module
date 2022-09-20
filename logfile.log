@@ -1,0 +1,164 @@
+2022-05-25 09:12:21.789  INFO 33368 --- [main] c.akg.employee_module.AkgEmployeeModule  : Starting AkgEmployeeModule using Java 1.8.0_271 on Fahim-Laptop with PID 33368 (D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication\build\classes\java\main started by DELL in D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication)
+2022-05-25 09:12:21.794  INFO 33368 --- [main] c.akg.employee_module.AkgEmployeeModule  : No active profile set, falling back to default profiles: default
+2022-05-25 09:12:23.028  INFO 33368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 09:12:23.105  INFO 33368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 14 JPA repository interfaces.
+2022-05-25 09:12:23.349  INFO 33368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@378bd86d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:12:23.354  INFO 33368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:12:23.571  INFO 33368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-25 09:12:23.579  INFO 33368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 09:12:23.579  INFO 33368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 09:12:23.664  INFO 33368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 09:12:23.664  INFO 33368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1828 ms
+2022-05-25 09:12:23.824  INFO 33368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 09:12:23.886  INFO 33368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-05-25 09:12:24.016  INFO 33368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 09:12:24.110  INFO 33368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 09:12:24.736  INFO 33368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 09:12:24.750  INFO 33368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-25 09:12:25.643  INFO 33368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 09:12:25.652  INFO 33368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:12:25.917  WARN 33368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 09:12:26.411  INFO 33368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@336e3be2, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f7cd50e, org.springframework.security.web.header.HeaderWriterFilter@794cb26b, org.springframework.security.web.authentication.logout.LogoutFilter@ff4b223, com.akg.employee_module.config.JwtRequestFilter@ce655b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d76099a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61c87f1b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@126a9a3d, org.springframework.security.web.session.SessionManagementFilter@1d3a03fe, org.springframework.security.web.access.ExceptionTranslationFilter@48277712, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22e813fc]
+2022-05-25 09:12:26.514  INFO 33368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:12:26.753  INFO 33368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-25 09:12:26.761  INFO 33368 --- [main] c.akg.employee_module.AkgEmployeeModule  : Started AkgEmployeeModule in 5.332 seconds (JVM running for 6.071)
+2022-05-25 09:12:40.383  INFO 33368 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:12:40.389  INFO 33368 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:12:40.391  INFO 33368 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 09:12:40.398  INFO 33368 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-25 09:12:53.545  INFO 44224 --- [main] c.akg.employee_module.AkgEmployeeModule  : Starting AkgEmployeeModule using Java 1.8.0_271 on Fahim-Laptop with PID 44224 (D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication\build\classes\java\main started by DELL in D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication)
+2022-05-25 09:12:53.548  INFO 44224 --- [main] c.akg.employee_module.AkgEmployeeModule  : No active profile set, falling back to default profiles: default
+2022-05-25 09:12:54.174  INFO 44224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 09:12:54.274  INFO 44224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 14 JPA repository interfaces.
+2022-05-25 09:12:54.563  INFO 44224 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@648ee871' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:12:54.566  INFO 44224 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:12:54.790  INFO 44224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-25 09:12:54.798  INFO 44224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 09:12:54.798  INFO 44224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 09:12:54.888  INFO 44224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 09:12:54.888  INFO 44224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2022-05-25 09:12:55.055  INFO 44224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 09:12:55.124  INFO 44224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-05-25 09:12:55.273  INFO 44224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 09:12:55.365  INFO 44224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 09:12:55.893  INFO 44224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 09:12:55.906  INFO 44224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-25 09:12:56.610  INFO 44224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 09:12:56.626  INFO 44224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:12:57.208  WARN 44224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 09:12:57.860  INFO 44224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22e813fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@16a09809, org.springframework.security.web.header.HeaderWriterFilter@1d8be7b9, org.springframework.security.web.authentication.logout.LogoutFilter@687b0ddc, com.akg.employee_module.config.JwtRequestFilter@1a4083f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@749d7c01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29b8df5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@433d93e7, org.springframework.security.web.session.SessionManagementFilter@dd20ebc, org.springframework.security.web.access.ExceptionTranslationFilter@3e4afd10, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@402a69f]
+2022-05-25 09:12:57.966  INFO 44224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:12:58.207  INFO 44224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-25 09:12:58.215  INFO 44224 --- [main] c.akg.employee_module.AkgEmployeeModule  : Started AkgEmployeeModule in 5.241 seconds (JVM running for 6.562)
+2022-05-25 09:14:52.067  INFO 44224 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 09:14:52.067  INFO 44224 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 09:14:52.069  INFO 44224 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-25 09:14:52.112  INFO 44224 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : 127.0.0.1  POST /api/v1/vonage/messages/status 
+2022-05-25 09:14:52.112  WARN 44224 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : JWT Token does not begin with Bearer String
+2022-05-25 09:14:52.526  WARN 44224 --- [http-nio-9090-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1064, SQLState: 42000
+2022-05-25 09:14:52.526 ERROR 44224 --- [http-nio-9090-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+'aaaaaaaa-bbbb-cccc-dddd-0123456789ab'+'%'' at line 1
+2022-05-25 09:15:24.572  INFO 44224 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:15:24.576  INFO 44224 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:15:24.578  INFO 44224 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 09:15:24.581  INFO 44224 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-25 09:15:46.044  INFO 54912 --- [main] c.akg.employee_module.AkgEmployeeModule  : Starting AkgEmployeeModule using Java 1.8.0_271 on Fahim-Laptop with PID 54912 (D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication\build\classes\java\main started by DELL in D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication)
+2022-05-25 09:15:46.046  INFO 54912 --- [main] c.akg.employee_module.AkgEmployeeModule  : No active profile set, falling back to default profiles: default
+2022-05-25 09:15:47.148  INFO 54912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 09:15:47.209  INFO 54912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 14 JPA repository interfaces.
+2022-05-25 09:15:47.413  INFO 54912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@bcb09a6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:15:47.416  INFO 54912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:15:47.601  INFO 54912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-25 09:15:47.608  INFO 54912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 09:15:47.608  INFO 54912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 09:15:47.685  INFO 54912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 09:15:47.686  INFO 54912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1603 ms
+2022-05-25 09:15:47.818  INFO 54912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 09:15:47.862  INFO 54912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-05-25 09:15:47.971  INFO 54912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 09:15:48.055  INFO 54912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 09:15:48.539  INFO 54912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 09:15:48.558  INFO 54912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-25 09:15:49.200  INFO 54912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 09:15:49.207  INFO 54912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:15:49.443  WARN 54912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 09:15:49.831  INFO 54912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402a69f, org.springframework.security.web.context.SecurityContextPersistenceFilter@749d7c01, org.springframework.security.web.header.HeaderWriterFilter@3d53e876, org.springframework.security.web.authentication.logout.LogoutFilter@53b7bf01, com.akg.employee_module.config.JwtRequestFilter@3866c96e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f48a080, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@277bc3a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@419f0ea, org.springframework.security.web.session.SessionManagementFilter@16a09809, org.springframework.security.web.access.ExceptionTranslationFilter@20faaf77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e9fb485]
+2022-05-25 09:15:49.920  INFO 54912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:15:50.121  INFO 54912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-25 09:15:50.128  INFO 54912 --- [main] c.akg.employee_module.AkgEmployeeModule  : Started AkgEmployeeModule in 4.391 seconds (JVM running for 5.22)
+2022-05-25 09:15:54.128  INFO 54912 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 09:15:54.128  INFO 54912 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 09:15:54.130  INFO 54912 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-25 09:15:54.161  INFO 54912 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : 127.0.0.1  POST /api/v1/vonage/messages/status 
+2022-05-25 09:15:54.161  WARN 54912 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : JWT Token does not begin with Bearer String
+2022-05-25 09:17:38.202  INFO 54912 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:17:38.205  INFO 54912 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:17:38.207  INFO 54912 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 09:17:38.210  INFO 54912 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-25 09:19:52.298  INFO 34508 --- [main] c.akg.employee_module.AkgEmployeeModule  : Starting AkgEmployeeModule using Java 1.8.0_271 on Fahim-Laptop with PID 34508 (D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication\build\classes\java\main started by DELL in D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication)
+2022-05-25 09:19:52.300  INFO 34508 --- [main] c.akg.employee_module.AkgEmployeeModule  : No active profile set, falling back to default profiles: default
+2022-05-25 09:19:52.792  INFO 34508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 09:19:52.853  INFO 34508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 14 JPA repository interfaces.
+2022-05-25 09:19:53.038  INFO 34508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a619c2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:19:53.041  INFO 34508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:19:53.219  INFO 34508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-25 09:19:53.231  INFO 34508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 09:19:53.232  INFO 34508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 09:19:53.336  INFO 34508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 09:19:53.338  INFO 34508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 997 ms
+2022-05-25 09:19:53.537  INFO 34508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 09:19:53.582  INFO 34508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-05-25 09:19:53.707  INFO 34508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 09:19:53.779  INFO 34508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 09:19:54.273  INFO 34508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 09:19:54.284  INFO 34508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-25 09:19:54.798  INFO 34508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 09:19:54.805  INFO 34508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:19:55.112  WARN 34508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 09:19:55.532  INFO 34508 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42f9873e, org.springframework.security.web.context.SecurityContextPersistenceFilter@139089a4, org.springframework.security.web.header.HeaderWriterFilter@70a24f9, org.springframework.security.web.authentication.logout.LogoutFilter@627bcd7e, com.akg.employee_module.config.JwtRequestFilter@5c76fce4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff4b223, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55d1f065, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18483b8b, org.springframework.security.web.session.SessionManagementFilter@362a6aa5, org.springframework.security.web.access.ExceptionTranslationFilter@1857fe6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@789dd6bf]
+2022-05-25 09:19:55.651  INFO 34508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:19:55.873  INFO 34508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-25 09:19:55.880  INFO 34508 --- [main] c.akg.employee_module.AkgEmployeeModule  : Started AkgEmployeeModule in 3.877 seconds (JVM running for 4.665)
+2022-05-25 09:20:48.951  INFO 34508 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 09:20:48.952  INFO 34508 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 09:20:48.953  INFO 34508 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-25 09:20:48.982  INFO 34508 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : 127.0.0.1  POST /api/v1/vonage/messages/status 
+2022-05-25 09:20:48.982  WARN 34508 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : JWT Token does not begin with Bearer String
+2022-05-25 09:25:20.771  INFO 34508 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:25:20.777  INFO 34508 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:25:20.781  INFO 34508 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 09:25:20.795  INFO 34508 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-25 09:32:43.664  INFO 53256 --- [main] c.akg.employee_module.AkgEmployeeModule  : Starting AkgEmployeeModule using Java 1.8.0_271 on Fahim-Laptop with PID 53256 (D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication\build\classes\java\main started by DELL in D:\Project\AKG_Employee_Module\Project\AkgEmployeeModuleApplication)
+2022-05-25 09:32:43.667  INFO 53256 --- [main] c.akg.employee_module.AkgEmployeeModule  : No active profile set, falling back to default profiles: default
+2022-05-25 09:32:44.197  INFO 53256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 09:32:44.262  INFO 53256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 14 JPA repository interfaces.
+2022-05-25 09:32:44.455  INFO 53256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@bcb09a6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:32:44.458  INFO 53256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-25 09:32:44.619  INFO 53256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-25 09:32:44.624  INFO 53256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 09:32:44.625  INFO 53256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 09:32:44.695  INFO 53256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 09:32:44.695  INFO 53256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2022-05-25 09:32:44.817  INFO 53256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 09:32:44.846  INFO 53256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-05-25 09:32:44.931  INFO 53256 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 09:32:44.995  INFO 53256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 09:32:45.420  INFO 53256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 09:32:45.428  INFO 53256 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-25 09:32:45.863  INFO 53256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 09:32:45.870  INFO 53256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:32:46.102  WARN 53256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 09:32:46.515  INFO 53256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@419f0ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@749d7c01, org.springframework.security.web.header.HeaderWriterFilter@3d53e876, org.springframework.security.web.authentication.logout.LogoutFilter@53b7bf01, com.akg.employee_module.config.JwtRequestFilter@4beae1e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f48a080, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@277bc3a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d47b06, org.springframework.security.web.session.SessionManagementFilter@16a09809, org.springframework.security.web.access.ExceptionTranslationFilter@20faaf77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f3fec43]
+2022-05-25 09:32:46.595  INFO 53256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:32:46.785  INFO 53256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-25 09:32:46.792  INFO 53256 --- [main] c.akg.employee_module.AkgEmployeeModule  : Started AkgEmployeeModule in 3.4 seconds (JVM running for 4.093)
+2022-05-25 09:33:12.580  INFO 53256 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 09:33:12.580  INFO 53256 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 09:33:12.581  INFO 53256 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-25 09:33:12.596  INFO 53256 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : 127.0.0.1  POST /api/v1/vonage/messages/status 
+2022-05-25 09:33:12.596  WARN 53256 --- [http-nio-9090-exec-1] c.a.e.config.JwtRequestFilter            : JWT Token does not begin with Bearer String
+2022-05-25 09:34:56.233  INFO 53256 --- [http-nio-9090-exec-3] c.a.e.config.JwtRequestFilter            : 127.0.0.1  POST /api/v1/vonage/messages/status 
+2022-05-25 09:34:56.233  WARN 53256 --- [http-nio-9090-exec-3] c.a.e.config.JwtRequestFilter            : JWT Token does not begin with Bearer String
+2022-05-25 09:35:13.010  INFO 53256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-25 09:35:13.013  INFO 53256 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 09:35:13.015  INFO 53256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 09:35:13.052  INFO 53256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/table.css"/>
+    <link rel="stylesheet" type="text/css" href="css/progress_loader.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bottom_bar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+    <!--<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>-->
+    <script type="text/javascript" src="js/lib/sheetjs.js" async></script>
+    <script type="text/javascript" src="js/lib/FileSaver.js" async></script>
+    <script type="text/javascript" src="js/common.js" async></script>
+    <script type="text/javascript" src="js/home.js" async></script>
+    <script type="text/javascript" src="js/employee.js" async></script>
+    <script type="text/javascript" src="js/registration.js" async></script>
+    <script type="text/javascript" src="js/broadcast.js" async></script>
+    <script type="text/javascript" src="js/broadcast_status.js" async></script>
+</head>
+<body onload="init()">
+    <div id="progress_loader_modal" class="progress-loader-modal"><div class="progress-loader-modal-content"></div></div>
+
+    <div class="container">
+        <div style="text-align: center;"><h1>Abul Khair Group HR Portal</h1></div>
+        <div class="topnav">
+            <a id="employee" onclick="loadEmployeePage(this)" >Employee</a>
+            <a id="registration" onclick="loadRegistrationPage(this)" >Registration</a>
+            <a id="broadcast" onclick="loadBroadcastPage(this)">Broadcast</a>
+            <a id="broadcast_status" onclick="loadBroadcastStatusPage(this)">Status</a>
+        </div>
+        <label></label>
+        <div class="row">
+            <div class="border_container" id="home_content"></div>
+        </div>
+        <label></label>
+        <div class="row">
+            <div class="bottom-bar">
+                <h3>Department of IT</h3>
+                <h2>Abul Khair Group</h2>
+                <h4>Corporate Office,D.T. Road,Pahartali,Chittagong</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
